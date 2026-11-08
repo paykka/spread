@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汇率空间一览（严禁截图及传播）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin-top: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        
+        .update-time {
+            color: #666;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 16px;
+            text-align: left;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        table thead tr {
+            background-color: #2c3e50;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        table th, table td {
+            padding: 16px 20px;
+            border-right: 1px solid #e0e0e0;
+        }
+        
+        table th:last-child, table td:last-child {
+            border-right: none;
+        }
+        
+        table th {
+            font-weight: 600;
+        }
+        
+        table tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        table tbody tr:nth-of-type(even) {
+            background-color: #f9f9f9;
+        }
+        
+        table tbody tr:last-of-type {
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        .currency-pair {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .discount-bp {
+            color: #27ae60;
+            font-weight: 600;
+        }
+        
+        .discount-percent {
+            color: #2980b9;
+            font-weight: 600;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+            font-size: 15px;
+            color: #555;
+        }
+        
+        .footer strong {
+            color: #2c3e50;
+        }
+        
+        .github-info {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #666;
+            border-left: 4px solid #333;
+        }
+        
+        .github-info a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .github-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            table th, table td {
+                padding: 12px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>汇率空间一览_11月（严禁截图及传播）</h1>
+            <div class="update-time">最后更新时间：2026-11-03</div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>卖出币种</th>
+                    <th>买入币种</th>
+                    <th>空间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="currency-pair">USD</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-bp">85.68BP</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">EUR</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-bp">171.98BP</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">HKD</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.089%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">GBP</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-bp">207.95BP</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">AUD</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-bp">106.96BP</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">SGD</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-bp">115.56BP</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">CAD</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-bp">115.55BP</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">NZD</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-bp">89.21BP</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">JPY</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.265%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">VND</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.411%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">IDR</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.574%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">MYR</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.045%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">PHP</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.135%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">THB</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.045%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">RON</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.135%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">PLN</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.135%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">HUF</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.775%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">GHS</td>
+                    <td class="currency-pair">USD</td>
+                    <td class="discount-percent">0.135%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">NGN</td>
+                    <td class="currency-pair">USD</td>
+                    <td class="discount-percent">0.600%</td>
+                </tr>
+                <tr>
+                    <td class="currency-pair">NGN</td>
+                    <td class="currency-pair">CNH</td>
+                    <td class="discount-percent">0.600%</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            <p><strong>说明：</strong>未显示货币对优惠空间统一为0.100%</p>
+        </div>
+    </div>
+
+    <script>
+        // 添加简单的交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableRows = document.querySelectorAll('table tbody tr');
+            
+            tableRows.forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#f0f7ff';
+                });
+                
+                row.addEventListener('mouseleave', function() {
+                    // 恢复原来的背景色
+                    if (Array.from(tableRows).indexOf(this) % 2 === 1) {
+                        this.style.backgroundColor = '#f9f9f9';
+                    } else {
+                        this.style.backgroundColor = '';
+                    }
+                });
+            });
+            
+            // 更新时间动态显示
+            const updateTimeElement = document.querySelector('.update-time');
+            const now = new Date();
+            const formattedDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+            updateTimeElement.textContent = `最后更新时间：${formattedDate}`;
+        });
+    </script>
+</body>
+</html>
